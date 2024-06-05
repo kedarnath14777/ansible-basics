@@ -1,9 +1,9 @@
 ---
--name:
-  hosts: backend
-  become: true
-  gather_facts: yes
-  tasks:
-    -name: "print some value "
-    ansible.builtin.degug:
-    msg: "helloo welcome "
+- name : print some thing in hte console 
+  hosts : backend 
+  become : yes 
+  gather_facts : yes 
+  -tasks: 
+    - name : print some thing 
+      ansible.builtin.debug:
+        msg : "hello well come all "
