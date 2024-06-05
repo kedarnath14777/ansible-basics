@@ -1,8 +1,7 @@
 - name: basic printing sctipt
   hosts: backend
-  gather_facts: yes
-  tasks:
-    -name: 
+  -tasks:
+    -name: print some thing 
       ansible.builtin.debug:
         msg: "print hello"
         registor: print_statenent
