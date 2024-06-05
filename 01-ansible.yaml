@@ -2,6 +2,8 @@
   hosts: backend
   gather_facts: yes
   tasks:
-    name: "print some thing"
-    ansible.builtin.debug:
-    msg: "print hello"
+    -name: 
+      ansible.builtin.debug:
+        msg: "print hello"
+        registor: print_statenent
+    
