@@ -3,7 +3,9 @@
   hosts: backend 
   become: yes 
   gather_facts: yes 
-  -tasks: 
+
+
+  tasks:
     - name: print some thing 
-      ansible.builtin.debug:
-        msg: "hello well come all "
+      ansible.builtin.degug:
+      msg: "hello welcome all "
