@@ -1,8 +1,9 @@
-- name: basic printing sctipt
+---
+-name:
   hosts: backend
-  -tasks:
-    -name: print some thing 
-      ansible.builtin.debug:
-        msg: "print hello"
-        registor: print_statenent
-    
+  become: true
+  gather_facts: yes
+  tasks:
+    -name: "print some value "
+    ansible.builtin.degug:
+    msg: "helloo welcome "
