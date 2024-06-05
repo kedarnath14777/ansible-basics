@@ -1,11 +1,9 @@
 ---
-- name: print some thing in hte console 
-  hosts: backend 
-  become: yes 
-  gather_facts: yes 
-
-
+- name: print some thing in hte console
+  hosts: backend
+  become: yes
+  gather_facts: yes
   tasks:
-    - name: print some thing 
-      ansible.builtin.degug:
+    - name: print some thing
+      debug:  
       msg: "hello welcome all "
