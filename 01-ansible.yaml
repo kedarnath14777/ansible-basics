@@ -6,4 +6,4 @@
   tasks:
     - name: print some thing
       debug:  
-      msg: "hello welcome all "
+        msg: "hello welcome all "
