@@ -5,5 +5,5 @@
   gather_facts: yes
   tasks:
     - name: print some thing
-      ansible.duiltin.degug:  
+      ansible.builtin.degug:  
       msg: "hello welcome all "
