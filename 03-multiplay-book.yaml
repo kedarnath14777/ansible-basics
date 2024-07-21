@@ -8,9 +8,9 @@
 
 
 
-# - name: multi paly  play 2 and task 1 
-#   host: localhost
-#   tasks:
-#    - name: play 2 and task 1 
-#      ansible.builtin.debug:
-#       msg: "hello welcome play 2 and task 1 "
+- name: multi paly  play 2 and task 1 
+  host: localhost
+  tasks:
+   - name: play 2 and task 1 
+     ansible.builtin.debug:
+      msg: "hello welcome play 2 and task 1 "
