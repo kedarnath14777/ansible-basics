@@ -5,6 +5,7 @@
     - name: print statemet
       ansible.builtin.debug:
         msg: hello welcome play 1 and task 1
+        
 - name: PLAY-2
   host: localhost
   tasks:
