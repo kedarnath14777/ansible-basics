@@ -1,14 +1,14 @@
--name: install and run the nginx in the child node 
- host: web
- become: yes 
- tasks:
+name: install and run the nginx in the child node
+host: web
+become: yes 
+tasks:
   -name: Install nginx rpm from a local file
-   ansible.builtin.dnf:
-    name: nginx
-    state: intalled 
+  ansible.builtin.dnf:
+     name: nginx
+     state: intalled 
   -name: start and enable the services 
-   ansible.builtin.service:
-    name: httpd
-    state: stopped
-    enabled: yes 
+  ansible.builtin.service:
+     name: httpd
+     state: stopped
+     enabled: yes 
   
