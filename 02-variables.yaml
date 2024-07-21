@@ -1,5 +1,5 @@
 - name: install and run the nginx in the child node
-  host: web
+  hosts: web
   become: yes
   tasks:
   - name: Install nginx rpm from a local file
