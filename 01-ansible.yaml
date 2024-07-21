@@ -1,22 +1,6 @@
----
-- name: print some thing in hte console
-  hosts: backend
-  become: yes
-  gather_facts: yes
-
-  tasks:
-    - name: print some thing
-      debug:
-        msg: "hello welcome all "
-
-
-#---
-#- name: print something in the console
-#  hosts: backend
-#  become: yes
-#  gather_facts: yes
-
-#  tasks:
-    - name: print something
-      debug:
-        msg: "hello welcome all 2"
+-name: ping the server 
+ host: web
+ become: yes 
+ tasks:
+  name: ping the server
+  ansible.builtin.ping:
