@@ -3,10 +3,14 @@
   tasks:
    - name: print statemet 
      ansible.builtin.debug:
-      msg: "hello welcome"
-- name: multi paly  play 2 and task 1 
-  host: localhost
-  tasks:
-   - name: play 2 and task 1 
-     ansible.builtin.debug:
-      msg: "play 2 and task 1 "
+      msg: "hello welcome play 1 and task 1"
+
+
+
+
+# - name: multi paly  play 2 and task 1 
+#   host: localhost
+#   tasks:
+#    - name: play 2 and task 1 
+#      ansible.builtin.debug:
+#       msg: "hello welcome play 2 and task 1 "
