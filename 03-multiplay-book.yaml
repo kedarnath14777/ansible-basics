@@ -1,4 +1,4 @@
-- name: play 1 and task 1  
+- name: PLAY-1 
   hosts: localhost
   tasks:
    - name: print statemet 
@@ -8,7 +8,7 @@
 
 
 
-- name: multi paly  play 2 and task 1 
+- name: PLAY-2
   host: localhost
   tasks:
    - name: play 2 and task 1 
