@@ -1,5 +1,5 @@
 ---
--name: install and run the nginx in the child node
+name: install and run the nginx in the child node
 host: web
 become: yes
 tasks:
