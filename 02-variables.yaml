@@ -1,14 +1,14 @@
-- name: install and run the ngin in the target node 
-  host: web 
-  become: yes 
-  gather_facts: no 
-  tasks:
-   name: Install the nginx
-    ansible.builtin.dnf:
-     name: nginx
-     state: installed 
-   name: run and enable the nginx services 
-     ansible.builtin.service:
-       name: nginx
-       state: started 
-       enable: yes 
+-name: install and run the ngin in the target node 
+ host: web 
+ become: yes 
+ gather_facts: no 
+ tasks:
+  name: Install the nginx
+   ansible.builtin.dnf:
+    name: nginx
+    state: installed 
+  name: run and enable the nginx services 
+    ansible.builtin.service:
+      name: nginx
+      state: started 
+      enable: yes 
