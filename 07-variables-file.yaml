@@ -1,6 +1,6 @@
 - name: varaibles form the file
   hosts: all 
-  vars:
+  vars_files:
     - vasr_variable.yaml
   tasks:
    - name: print the varaibles from another file 
