@@ -2,10 +2,10 @@
   hosts: localhost 
   tasks:
     name: task level vaiables 
+    ansible.builtin.debug:
+     msg : "COurse is {{course}} , Fee is {{Fee}}, trainer is {{trainer}} & Duration is {{duration}}"
     vars:
       trainer: madhu 
       duration: 110 HRS 
       fee: 25k 
       course: DevOps
-    ansible.builtin.debug:
-      msg : "COurse is {{course}} , Fee is {{Fee}}, trainer is {{trainer}} & Duration is {{duration}}"
