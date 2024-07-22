@@ -5,7 +5,7 @@
   tasks:
    - name: check the user is existed or not 
      ansible.builtin.command: id kedarnath 
-     ignore_error: true
+     
    
    - name: get massage
      ansible.builtin.debug:
