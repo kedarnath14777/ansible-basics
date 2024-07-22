@@ -3,15 +3,14 @@
   become: yes
   gather_facts: true
   tasks:
-   - name: check the user is existed or not 
-     ansible.builtin.command: id kedarnath 
-     register: USER
-     ignore_error: true
-   
-   - name: print the  user
-     ansible.builtin.debug:
-      msg: "user is {{USER}}"
-    
-   - name: get massage
-     ansible.builtin.debug:
+    - name: Do not count this as a failure
+      ansible.builtin.command: /bin/false
+      regester: USER
+      ignore_errors: true
+
+    - name: print the  user
+      ansible.builtin.debug:
+       msg: "user is {{USER}}"
+    - name: get massage
+      ansible.builtin.debug:
       msg: "hello welcome "
