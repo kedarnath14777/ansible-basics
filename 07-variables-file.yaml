@@ -1,8 +1,9 @@
+---
 - name: varaibles form the file
-  hosts: all 
-  vars_files:
-    vars.yaml
+  hosts: all
+  vars_files: 
+   - vars.yaml
   tasks:
-   - name: print the varaibles from another file 
-     ansible.builtin.debug :
+    name: print the varaibles from another file
+    ansible.builtin.debug:
       msg: " trainer is {{trainer}}"
