@@ -11,7 +11,7 @@
   tasks:
    - name: compare the variables
      ansible.builtin.debug:
-      msg: "wishes from {{wishes}}"
+      msg: "wishes from {{wishes : default }}"
     #  vars:
     #   wishes: good morning from the Task level 
 
