@@ -3,8 +3,8 @@
   become: yes
   gather_facts: true
   tasks:
-    - name: Do not count this as a failure
-      ansible.builtin.command: /bin/false
+    - name: check the user is existed or not 
+      ansible.builtin.command: id kedarnath
       regester: USER
       ignore_errors: true
 
