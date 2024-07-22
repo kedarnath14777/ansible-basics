@@ -1,0 +1,8 @@
+- name: varaibles form the file
+  hosts: all 
+  vars:
+    - vasr_variable.yaml
+  tasks:
+   - name: print the varaibles from another file 
+     ansible.builtin.debug:
+      msg: "course is{{Course}}, "
