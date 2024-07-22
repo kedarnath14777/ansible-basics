@@ -11,7 +11,7 @@
 
     - name: print the USER_Register
       ansible.builtin.command:
-        mag: "print the user is {{USER}}"
+       mag: "print the user is {{USER}}"
     
     - name: print some thing
       ansible.builtin.debug:
