@@ -1,4 +1,4 @@
-- name: Play level variables
+- name: play level variables
   hosts: localhost
   tasks:
     name: task level vaiables
