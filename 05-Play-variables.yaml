@@ -1,9 +1,8 @@
----
-- name: play level varaibles
-  hosts: localhost 
+- name: play level 
+  hosts: localhost
   tasks:
-   nmae: play level variables 
-   ansible.builtin.debug:
-    msg: "trainer is {{trainer}}"
-   vars:
-    trainer: mahesh 
+    - name: play level
+      ansible.builtin.debug:
+        msg: "trainer is {{trainer}}"
+      vars:
+        trainer: kedarnath
