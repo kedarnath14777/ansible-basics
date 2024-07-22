@@ -5,8 +5,9 @@
   tasks:
     - name: check the user is existed or not 
       ansible.builtin.command: id kedarnath
+      ignore_error: True
       register: USER
-      
+       
 
     - name: print the USER_Register
       ansible.builtin.command:
