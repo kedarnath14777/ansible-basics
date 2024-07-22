@@ -1,0 +1,21 @@
+- name: create the user if user is not existed 
+  hosts: web
+  become: true
+  gather_facts: yes
+  tasks:
+    - name: check the user
+      ansible.builtin.command: id kedarnath
+      register: USER
+      ignore_errors: True
+
+    - name: print the register_user
+      ansible.builtin.debug: 
+        msg: " print the user is {{USER}}"
+    
+    - name: create the user if the user is not existed
+      ansible.builtin.user: id kedarnath
+      when: USER.rc != 0 # condition 
+
+    - name: print some thing 
+      ansible.builtin.debug:
+        msg: " user is created "
