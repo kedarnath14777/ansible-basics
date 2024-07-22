@@ -14,7 +14,7 @@
     
     - name: create the user if the user is not existed
       ansible.builtin.commamd: useradd  kedarnath
-      when: USER.rc != 0 # condition 
+      when: USER.rc!= 0 # condition 
 
     - name: print some thing 
       ansible.builtin.debug:
