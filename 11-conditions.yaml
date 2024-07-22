@@ -14,4 +14,4 @@
 
     - name: print the USER_Register
       ansible.builtin.command:
-       msg: "print the user is {{USER}}"
+        msg: "print the user is {{USER}}"
