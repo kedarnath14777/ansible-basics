@@ -7,12 +7,11 @@
       ansible.builtin.command: id kedarnath
       ignore_errors: true
       register: USER
-       
+      
+    - name: print some thing
+      ansible.builtin.debug:
+        msg: "hello "  
 
     - name: print the USER_Register
       ansible.builtin.command:
        mag: "print the user is {{USER}}"
-    
-    - name: print some thing
-      ansible.builtin.debug:
-        msg: "hello "
