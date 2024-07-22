@@ -1,7 +1,7 @@
 - name: vars comparision 
   hosts: localhost
-  vars:
-    wishes: good moring wishes from the Play level
+  # vars:
+  #   wishes: good moring wishes from the Play level
   vars_files:
     vars.yaml
   # vars_prompt:
@@ -12,3 +12,9 @@
    - name: compare the variables
      ansible.builtin.debug:
       msg: "wishes from {{wishes}}"
+     vars:
+      wishes: good morning from the Task level 
+
+
+
+# 1. prompt 2.
