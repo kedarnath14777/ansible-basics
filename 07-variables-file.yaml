@@ -5,4 +5,4 @@
   tasks:
    - name: print the varaibles from another file 
      ansible.builtin.debug:
-      msg: "course is{{Course}}, "
+      msg: "course is{{trainer}}, "

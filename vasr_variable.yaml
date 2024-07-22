@@ -1,5 +1,5 @@
 - name:
   vars:
-   Course: ansible
+   course: ansible
    fee: 11k
    trainer: kedarnath 
