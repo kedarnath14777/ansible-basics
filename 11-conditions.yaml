@@ -13,5 +13,5 @@
         msg: "hello "  
 
     - name: print the USER_Register
-      ansible.builtin.command:
+      ansible.builtin.debug:
         msg: "print the user is {{USER}}"
