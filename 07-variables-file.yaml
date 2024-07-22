@@ -1,7 +1,7 @@
 - name: varaibles form the file
   hosts: all 
   vars_files:
-    - vasr_variable.yaml
+    vasr_variable.yaml
   tasks:
    - name: print the varaibles from another file 
      ansible.builtin.debug:
