@@ -3,4 +3,4 @@
   tasks:
    - name: get here
      ansible.builtin.debug:
-      msg: "variables from the inventory is trainer is {{trainer}}"
+      msg: "variables from the inventory is trainer is {{trainer}} and de url is {{DB_url}}"
