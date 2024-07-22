@@ -5,5 +5,5 @@
    - vars.yaml
   tasks:
     name: print the varaibles from another file
-    ansible.builtin.debug:
-      msg: " trainer is {{trainer}}"
+  ansible.builtin.debug:
+       msg: " trainer is {{trainer}}"
