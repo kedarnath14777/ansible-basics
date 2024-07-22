@@ -13,9 +13,7 @@
         msg: " print the user is {{USER}}"
     
     - name: create the user if the user is not existed
-      ansible.builtin.user: 
-       name: kedarnath
-       state: present
+      ansible.builtin.command: adduser kedarnath 
       when: USER.id != 0 # condition 
 
     - name: print some thing 
