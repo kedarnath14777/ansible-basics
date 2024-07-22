@@ -1,6 +1,7 @@
 - name: arguments  from the user prompt
   hosts: localhost
   vars_prompt:
+  
    - name: USERNAME
      prompt: Please enter the user name 
      private: false
