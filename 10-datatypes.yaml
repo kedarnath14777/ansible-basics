@@ -1,0 +1,21 @@
+- name: datatypes
+  hosts: localhost
+  vars:
+    course: "Devops with AWS" # string 
+    tools:  # list
+    - jenkins
+    - docker
+    - kubernetes
+    - shell
+    experiences: # map or Dictonary 
+      devops: 3  
+      ansible: 2 
+      git: 1 
+      jenkins: 2 
+    realtime_project: yes  # boolean
+    
+
+  tasks:
+    - name: print thee all types of datatypes
+      ansible.builtin.debug:
+        msg: "course is {{course}} experiences is {{experiences}} tool likes {{tools}} must have {{realtime_project}}"
